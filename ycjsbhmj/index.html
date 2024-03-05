@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/styyle.css">
+    
+  <style>
+    body{
+      height: 10000px;
+      background-color: black;
+    }
+    .nav{ 
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 80px;
+      width: 1100px;
+      /* background-color: cadetblue; */
+      display: flex;
+      align-items: center;
+      background-color: black;
+    }
+    .child a{
+      text-decoration: none;
+      color: white;
+    }
+    .child a:hover{
+      transition: 0.5s;
+      color: aqua;
+
+    }
+    ul{
+      width: 1100px;
+      /* background-color: green; */
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    li{
+      list-style: none;
+    }
+    .logo{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 200px;
+      /* background-color: bisque; */
+    }
+    .parentvid{
+      height: 100px;
+      width: 100px;
+      box-sizing: border-box;
+    }
+    .bvid{
+      height: 420px;
+      margin-left: 505px;
+      margin-top: 150px;
+      opacity: 0.25;
+      box-sizing: border-box;
+    }
+    /* h1 a{
+      text-decoration: none;
+      font-size: 60px;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      position: relative;
+      left: 70px;
+      top: 150px;
+      box-sizing: border-box;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5%;
+    } */
+    /* h1 a:hover{
+      transition: 1s;
+      color: aqua;
+      box-shadow: 2px 2px 5px aqua;
+    } */
+    .mess{
+      position: fixed;
+      right: 60px;
+      bottom: 40px;
+      border: 1.05px solid aqua;
+      border-radius: 50%;
+      background-color: black;
+    }
+    .mess:hover{
+      transition: 1s;
+      border-color: red;
+    }
+    /* .feature{
+      height: 300px;
+      background-color: bisque;
+    } */
+    .feat1{
+      color: white; 
+      background-color: black; 
+      margin-top: 530px; 
+      margin-left: 50px; 
+      height: 50px; width: 70px; 
+      border-radius: 50px; 
+      border-color: aqua;
+    }
+    .feat1:hover{
+      transition: 0.1s;
+      border-color: red;
+    }
+    .box1{
+    display: inline-block; 
+    margin-left: 10px; 
+    width: 200px; 
+    float: right; 
+    height: 400px ;
+    margin-top: 20px; 
+    background-color:  black;
+    margin-right: 10px;
+    border: 1px solid black;
+    /* margin-top: 160px; */
+    box-sizing: border-box;
+    }
+    .box2{
+      display: inline-block; 
+      margin-left: 10px; 
+      width: 200px; 
+      float: right; 
+      height: 400px ;
+      margin-top: 20px; 
+      background-color:  black;
+      border: 1px solid black;
+      /* margin-top: 160px; */
+    }
+    .box3{
+      display: inline-block; 
+      margin-left: 10px; 
+      width: 200px; 
+      float: right; 
+      height: 400px ;
+      margin-top: 20px; 
+      background-color:  black;
+      border: 1px solid black;
+      /* margin-top: 160px; */
+    }
+    .box4{
+      display: inline-block; 
+      margin-left: 10px; 
+      width: 200px; 
+      float: right; 
+      height: 400px ;
+      margin-top: 20px; 
+      background-color:  black;
+      border: 1px solid black;
+      /* margin-top: 160px; */
+    }
+    .box5{
+      display: inline-block; 
+      margin-left: 10px; 
+      width: 200px; 
+      float: right; 
+      height: 400px ;
+      margin-top: 20px; 
+      background-color:  black;
+      border: 1px solid black;
+      /* margin-top: 160px; */
+    }
+    .box6{
+      display: inline-block; 
+      margin-left: 10px; 
+      width: 169px; 
+      float: right; 
+      height: 400px ;
+      margin-top: 20px; 
+      background-color:  black;
+      border: 1px solid black;
+      /* margin-top: 160px; */
+      box-sizing: border-box;
+    }
+    .box1:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .box2:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .box3:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .box4:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .box5:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .box6:hover{
+      transition: 0.5s;
+      box-shadow: 0.2px 0.2px 10px rgb(103, 99, 99),-0.2px -0.2px 10px rgb(103, 99, 99);
+    }
+    .dis{
+      color: #fff;
+    }
+    .writing{
+      margin-top: -20px;
+    }
+    .sayings{
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      display: inline-block;
+      position: relative;
+      z-index: -1;
+      top: -70px;
+    }
+    .head1{
+      background-color: aqua;
+      width: 130px;
+      /* margin: auto; */
+      position: relative;
+      top: 20%;
+      left: 20%;
+    }
+    .par7{
+      position: relative;
+      top: 18%;
+      font-family: "Bonheur Royale", cursive;
+      font-size: 21px;
+      display: inline-block;
+    }
+    /* .sayimg{
+      display: inline-block;
+      height: 300px;
+      width: 943px;
+      background-color: bisque;
+      position: relative;
+      top: -30px;
+      left: -4px;
+    }
+    */
+    .rimg{
+      display: inline-block;
+      rotate: 270deg;
+      height: 300px;
+      width: 200px;
+      position: relative;
+      top: 100px;
+      background-color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="child">
+          <li><a href="explore.html">SHOP</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mess.html">Costumer Care</a></li>
+          <li><a href="index.html" style="text-decoration:underline;">Sign in</a></li>
+          <li><a href="mess.html" style="text-decoration:underline;">Track Order</a></li>
+       </ul>
+      </div>
+      <div class="logo"><a href="index.html"><img src="img/razor-blade-silhouette-for-icon-symbol-art-illustration-logo-type-website-or-graphic-design-element-illustration-vector.jpg" height="80px" width="200px"></a></div>
+      <div class="parentvid">
+        <video src="img/[1920x1080] Three-head Electric Shaver 3D Animation on Vimeo.mp4" autoplay loop muted class="bvid"></video>
+      </div>
+      <button class="mess"><a href="mess.html"><img src="img/msg.png" height="60px" width="60px" style="border-radius: 50%;"></a></button>
+      <!-- <a href="index.html" style="color: #fff; margin-left: 700px;">hello</a> -->
+      <button class="feat1" >Price</button>
+      <div class="hdg" style="color: blue; height: 450px; background-color:wheat; margin-top: 70px;">
+        <a href="index.html" ><div class="box1" ><img src="img/shaver1.webp" height="250px" width="180px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+        <a href="index.html" ><div class="box2" ><img src="img/shaver1.webp" height="250px" width="180px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+        <a href="index.html" ><div class="box3" ><img src="img/shaver1.webp" height="250px" width="180px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+        <a href="index.html" ><div class="box4" ><img src="img/shaver1.webp" height="250px" width="180px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+        <a href="index.html" ><div class="box5" ><img src="img/shaver1.webp" height="250px" width="180px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+        <a href="index.html" ><div class="box6" ><img src="img/shaver1.webp" height="250px" width="150px" style="margin-top: 9px; margin-left: 9px; border: 1px solid ;box-sizing: border-box;"></div></a>
+      </div>                     
+
+      <div class="writing" style="height: 500px; background-color:purple;position: relative; z-index: -1; margin-top: 1px;">
+       <div class="sayings">
+         <h2 class="head1">MEN Say'sS</h2>
+           <p class="par7">
+            "A good shaver isn’t just about getting
+             rid of hair, it’s about crafting a look, defining
+              your style, and taking control of your image."12
+             </p>
+       </div> 
+       <!-- <div class="sayimg">
+      </div> -->
+      <img src="img/s-l1600.jpg"
+      height="100px" width="100px" class="rimg">
+      </div>
+</body>
+</html>
