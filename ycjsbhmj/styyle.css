@@ -1,0 +1,48 @@
+@keyframes slider {
+    from{
+        transform: translateX(-300px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+
+}
+.heading1{
+    animation: slider 0.5s linear  ;
+    
+}
+@keyframes slider1{
+    from{
+        transform: translatey(-100px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+}
+.nav,.logo{
+    animation: slider1 2s linear ;
+}
+@keyframes slider2 {
+    from{
+        transform: translateX(200px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.mess{
+    /* display: none; */
+    animation: slider2  0.9s  1s ;
+    /* animation: rotate 0.9s linear ; */
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.sayings{
+    animation: slider 0.75s ease;
+}
